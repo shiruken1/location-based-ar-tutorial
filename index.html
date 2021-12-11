@@ -11,17 +11,13 @@
 
   <body style="margin: 0; overflow: hidden;">
     <a-scene
-      vr-mode-ui="enabled: false"
-      embedded
-      arjs="sourceType: webcam; debugUIEnabled: false;"
-    >
-      <a-box
-        look-at="[gps-camera]"
-        scale="150 150 150"
-        gps-entity-place="latitude: 30.763690;
-        longitude: -98.067980;"
-      ></a-box>
-      <a-camera gps-camera rotation-reader> </a-camera>
-    </a-scene>
+        vr-mode-ui="enabled: false"
+    embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+
+        <a-camera gps-camera rotation-reader></a-camera>
+        <a-entity gltf-model="https://gist.githubusercontent.com/alumno2016/8501a1640ec90525b633c657ca4a3390/raw/261e2797a2684d357f66d03cb1f8010b5f906698/dron.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 30.763690;
+        longitude: -98.067980;"/>
+  </a-scene>
   </body>
 </html>
