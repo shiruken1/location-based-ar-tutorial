@@ -17,12 +17,12 @@
     >
       <a-text
         value="This content will always face you."
-        look-at="[gps-camera]"
+        look-at="[camera]"
         scale="120 120 120"
         gps-entity-place="latitude: 30.763690;
         longitude: -98.067980;">
       </a-text>
-      <a-camera gps-camera rotation-reader> </a-camera>
+      <a-entity camera rotation-reader look-controls position="0 1.6 0"></a-entity>
     </a-scene>
   </body>
 </html>
